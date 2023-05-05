@@ -1,0 +1,463 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.active{
+    color: #000;
+    background-color: #fff;  
+}
+.html{
+    font-size: 62.5%;
+}
+
+.navbar input[type="checkbox"],
+.navbar .hamburger-lines{
+    display: none;
+}
+footer{
+    position: relative;
+    bottom: -300px ;
+    width: 98vw;
+    height: 150px;
+    box-shadow: 0px 0px 4px 0px ;
+}
+.bottom-logo{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.logo{
+    user-select: none;
+}
+@keyframes colorRotate {
+    from {
+      color: red;
+    }
+    10% {
+      color: orange;
+    }20%{
+       color:yellow;
+    }30%{
+    color:cyan;
+    }40%{
+    color:rgb(0, 217, 255)
+    }50% {
+      color: blue;
+    }60%{
+    color:pink;
+    }70% {
+      color:violet ;
+    }80%{
+    color:purple;
+    } 90%{
+    color:darkmagenta;
+    }100% {
+      color: red;
+    }
+  }
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 35px;
+    right: 30px;
+    background-color: rgb(0, 0, 0);
+    padding: .5em;
+    border-radius: 4px;
+    box-shadow: 0px 0px 4px 0px lightgray;
+    animation: scaleUp 0.3s;
+    color: #fff;
+}
+.theme{
+    background-color: #000;
+    color: #fff;
+    font-size: 17;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.dropdown-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+.game8{
+    background: url(../images/hot\ or\ cold.jpeg)no-repeat;
+    background-size: cover;    
+}
+.dropdown-list li{
+    border: 2px solid white;   
+    text-align: center; 
+    cursor: pointer; 
+    position: relative;
+    left: -10px;
+    border-radius: 5px;
+    transition: all .5s;
+}
+.game7{
+    background: url(../images/flap.jpeg)no-repeat;
+    background-size: cover;   
+}
+.game6{
+    background: url(../images/chess.jpeg)no-repeat;
+    background-size: cover;   
+}
+.dropdown-list li:hover{
+    color: #000;
+    background-color: #fff;
+}
+@keyframes scaleUp {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.active{
+    position: relative;
+    left: -350px;
+}
+
+.navbar{
+    box-shadow: 0px 5px 10px 0px #aaa;
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    color: #000;
+    opacity: 0.85;
+    z-index: 100;
+}
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    align-items: center;
+}
+.logoutBtn{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+
+}
+.none{
+    display: none;
+}
+.game3{
+    background: url(../images/flash.jpeg)no-repeat;
+    background-size: cover;
+}
+.menu-items{
+    order: 2;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+.checkbox-label {
+  background-color: #111;
+  width: 50px;
+  height: 26px;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-moon {color: #f1c40f;}
+
+.fa-sun {color: #f39c12;}
+
+.checkbox-label .ball {
+  background-color: #fff;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .checkbox-label .ball {
+  transform: translateX(24px);
+}
+.theme input[type="checkbox"]{
+    cursor: pointer;
+    display:inline-block;
+}
+.logo{
+    order: 1;
+    font-size: 2.3rem;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btn{
+width: 70px;
+height: 30px;
+border-radius: 30px;
+border: none;
+box-shadow:1px 0px 3px 1px darkgray;
+cursor: pointer;
+
+}
+.menu-items li{
+    list-style: none;
+    margin-left: 1.5rem;
+    font-size: 1.3rem;
+}
+.loginBtn{
+background:linear-gradient(to left ,cyan,blue,rgb(255, 49, 49));
+border: 1px solid red;
+color: white;
+}
+.signUpBtn{
+background:linear-gradient(to left ,orange,yellow,rgb(255, 102, 0));
+border: 1px solid red;
+color: rgb(0, 0, 0);
+}
+.detail{
+    font-weight:normal;
+    font-family: sans-serif;
+}
+.navbar a{
+    color: #444;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+.fa-xmark{
+    cursor: pointer;
+}
+.game{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    box-shadow: 5px 0px 10px 0px ;
+    color: rgb(255, 0, 0);
+    height: 100px;
+    border-radius: 20px;
+    justify-content: center;
+    animation: colorRotate 5s infinite;
+}
+.game4{
+    background: url(../images/snake.jpeg)no-repeat;
+    background-size: cover;   
+}
+.game5{
+    background: url(../images/planet.jpeg)no-repeat;
+    background-size: cover;     
+}
+.playbtn:hover{
+    scale: 1.5;
+}
+.game h1 {
+    background-color: #000;
+    border-radius: 20px;
+}
+.game1{
+    background: url(../images/Tic\ Tac\ Toe.jpeg) no-repeat;
+    background-size: cover;
+}
+.game2{
+    background: url(../images/wordled.jpeg) no-repeat;
+    background-size: cover;
+}
+.playbtn{
+    background-color: rgb(0, 0, 0);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: large;
+    color: cyan;
+    cursor: pointer;
+    transition: all .5s;
+}
+.games{
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+}
+.navbar a:hover{
+    color: #117964;
+}
+#active{
+    color: #117964;
+}
+.group{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5em;
+}
+@media (max-width: 850px){
+        .games{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+@media (max-width: 1080px){
+    .cell {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width: 768px){
+    .navbar{
+        opacity: 0.95;
+    }
+
+    .navbar-container input[type="checkbox"],
+    .navbar-container .hamburger-lines{
+        display: block;
+    }
+
+    .navbar-container{
+        display: block;
+        position: relative;
+        height: 64px;
+    }
+
+    .navbar-container input[type="checkbox"]{
+        position: absolute;
+        display: block;
+        height: 32px;
+        width: 30px;
+        top: 20px;
+        left: 20px;
+        z-index: 5;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    .navbar-container .hamburger-lines{
+        display: block;
+        height: 28px;
+        width: 35px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .btns{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .navbar-container .hamburger-lines .line{
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: #333;
+    }
+    
+    .navbar-container .hamburger-lines .line1{
+        transform-origin: 0% 0%;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .navbar-container .hamburger-lines .line2{
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .navbar-container .hamburger-lines .line3{
+        transform-origin: 0% 100%;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .navbar .menu-items{
+        padding-top: 100px;
+        background: #fff;
+        height: 100vh;
+        max-width: 300px;
+        transform: translate(-150%);
+        display: flex;
+        flex-direction: column;
+        margin-left: -40px;
+        padding-left: 40px;
+        transition: transform 0.5s ease-in-out;
+        box-shadow:  5px 0px 10px 0px #aaa;
+        overflow: scroll;
+    }
+
+    .navbar .menu-items li{
+        margin-bottom: 1.8rem;
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+
+    .logo{
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 2.5rem;
+    }
+    
+
+    .navbar-container input[type="checkbox"]:checked ~ .menu-items{
+        transform: translateX(0);
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1{
+        transform: rotate(45deg);
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2{
+        transform: scaleY(0);
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3{
+        transform: rotate(-45deg);
+    }
+
+}
+
+@media (max-width: 500px){
+    .navbar-container input[type="checkbox"]:checked ~ .logo{
+        display: none;
+    }
+}
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    box-shadow:0px 5px 10px 0px ;
+    position: relative;
+    top: 200px;
+}
+img{
+    user-select: none;
+}

@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    background-color: #242220;
+}
+.home{
+    background-color: aqua;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: large;
+    width: 90vw;
+    display: flex;
+  }
+.container-turn {
+    width: 250px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    opacity: 0;
+    background-color: #242220;
+    border: 3px solid #c9c9c9;
+    border-radius: 10px;
+    color: #c9c9c9;
+    transition: visibility 0.3s linear, opacity 0.3s linear;
+}
+
+.container-turn img {
+    width: 50px;
+    height: 50px;
+}
+
+#turn {
+    font-size: 30px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+
+table {
+    border-collapse: collapse;
+    width: 640px;
+    height: 640px;
+    margin-bottom: 3rem;
+}
+
+td {
+    width: 75px;
+    height: 75px;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 0px;
+}
+
+table tr td:first-child {
+    width: 30px;
+    font-size: 1rem;
+}
+
+table tr:last-child td {
+    height: 30px;
+    font-size: 1rem;
+}
+
+.color1 {
+    background-color: #ff9900b9;
+    color: #ffbb00;
+}
+
+.color2 {
+    background-color: #ffbb00;
+    color: #638644;
+}
+
+.img {
+    width: 60px;
+    position: relative;
+    bottom: 5px;
+}
+
+.hintMove {
+    background: url(https://github.com/TwickE/ChessGame/blob/main/images/HintMove.png?raw=true);
+}
+
+.hintEat {
+    background: url(https://github.com/TwickE/ChessGame/blob/main/images/HintEat.png?raw=true);
+}
+
+@media (max-width:650px){
+    h1 {
+        margin-bottom: 0;
+        font-size: 2.5rem;
+    }
+
+    table {
+        transform: scale(0.8);
+    }
+
+    .container-turn {
+        width: 200px;
+        height: 110px;
+    }
+
+    .container-turn img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    #turn {
+        font-size: 25px;
+    }
+}
+
+@media (max-width:550px){
+    table {
+        transform: scale(0.6);
+    }
+
+    .container-turn {
+        width: 180px;
+        height: 100px;
+    }
+
+    .container-turn img {
+        width: 35px;
+        height: 35px;
+    }
+    
+    #turn {
+        font-size: 20px;
+    }
+}
+
+@media (max-width:400px){
+    table {
+        transform: scale(0.5);
+    }
+}

@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: #212F3D;
+    overflow: hidden;
+}
+
+h1.title {
+    text-align: center;
+    font-size: 48px;
+    margin: 2rem 0 .6rem 0;
+    color: #fff;
+    font-family: 'Saira Extra Condensed', sans-serif;
+}
+.home{
+    background-color: aqua;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: large;
+    width: 90vw;
+    display: flex;
+  }
+.status {
+    text-align: center;
+}
+
+.live {
+    font-size: 25px;
+    color: #fff;
+}
+
+.status svg {
+    width: 30px;
+    vertical-align: sub;
+    margin-left: 5px;
+}
+
+.message {
+    margin-top: 14px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.howtoplay {
+    margin-top:7px;
+    font-size: 15px;
+    color: #ddd;
+}
+
+.test {
+    width: 0;
+    height: 0;
+}
+
+#my-cat {
+    height: 28px;
+}
+
+button.iBtn {
+    margin-top: 1rem;
+    background: orange;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    width: 180px;
+    height: 42px;
+}
+
+.wrapper {
+    margin: 30px auto;
+    width: 320px;
+    height: 320px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.button {
+    padding: 15px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+}
+
+.note {
+    text-align: center;
+    color: rgb(88, 88, 88);
+}
